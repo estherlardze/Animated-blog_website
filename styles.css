@@ -390,9 +390,15 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
         margin: 0;
         overflow: hidden;
     }
-    
+    .blogs{
+        width: 100vw;
+    }
     .blogs img{
-        width: 100%;
+        width: 94%;
+        padding:0 3%;
+    }
+    .blog h3, .blog p{
+        padding:0 5%;
     }
     .blog-date{
         background-color: #50c9d9;
@@ -404,15 +410,18 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
     .blog-date span{
         font-size: 1rem;
     }
+    .cards-section{
+        width: 100vw;
+    }
     .cards-section article{
         text-align: center;
-        width: 24rem;
+        width: 22rem;
         box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
         
         }
         .cards-section img{
             height: 13rem;
-            width: 24rem;
+            width: 22rem;
             gap: 1rem;
         }
         .category{
@@ -432,6 +441,9 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
           }  
           .home{
             width: 100vw;
+          }
+          .Popular-post{
+            width: 100%;
           }
           
 }
