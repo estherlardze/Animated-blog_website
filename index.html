@@ -16,14 +16,15 @@
        <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
-  <nav class="fixed-top">
-    <h1><a href="#">Explorer</a></h1>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    
+ <nav class="fixed-top">
+    <div>
+      <h1><a href="#">Explorer</a></h1>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+     </a>
+    </div>  
     <div class="links">
       <ul>
         <li><a href="#home" class="spin">Home</a></li>
@@ -31,188 +32,149 @@
         <li><a href="#blogs" class="spin">Blogs</a></li>
         <li><a href="#contact" class="spin">Contact</a></li>   
       </ul>
-      </div>
-      <div class="sign">
-        <button class="btn btn-dark sign-in-up">sign in</button>
+    </div>
+       <div class="sign me-3 mt-2">
+        <button class="btn btn-dark sign-in-up me-2">sign in</button>
         <button class="btn btn-outline-dark sign-in-up">sign up</button>
       </div> 
   </nav>
   
-      <main>
-        <div class="home" id="home">
-          <div data-aos="fade-up">
-           <h4>Tours and Travel</h4>
-           <h1 class="fw-bold">Amazing places on earth</h1>
-           <button class="cover" type="button"><span class="ccc"></span>Explore</button>
+  <main>
+   <div class="home" id="home">
+        <div class="header-overlay">
+        <div data-aos="fade-up">
+          <h5 >Tours and Travel</h5>
+          <h1 class="fw-bold">Amazing places on earth</h1>
+          <button class="cover" type="button">Explore</button>
         </div>
       </div>
-        <h1 class="fw-bold post text-center">Latest Post</h1>
-        <section class="cards-section container owl-carousel" id="news">
-           
-            <article>
-                <img src="images/post-3.jpg" alt="">
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <button>fashion</button>
-                <p>2 minutes</p>
-            </article>
-            <article>
-                <img src="images/men.jpg" alt="">
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <button>fashion</button>
-                <p>10 minutes</p>
-            </article>
-            <article>
-                <img src="images/Ai.jpg" alt="">
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <button>fashion</button>
-                <p>40 minutes</p>
-            </article>
-            <article>
-                <img src="images/ocean.jpg" alt="">
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <button>fashion</button>
-                <p>1 hour</p>
-            </article>
-            <article>
-                <img src="images/program.jpg" alt="">
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet.</h3>
-                <button>fashion</button>
-                <p>2 hours</p>
-            </article>
-        </section>
-        <section class="blog-section" id="blogs">
-            <div> 
-                <h1 class="text-center fw-bold">Recent Blogs</h1>
-            <div class="blogs">
-              <div data-aos="zoom-in">
-                 <img src="images/blog.jpeg" alt="">
-                </div>
-                  <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
-                 <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;January 5th,2022</span>
-                 <span><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;1 comment</span></p>
-                 <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</h3>
-                 <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. Ipsum laborum, magnam molestiae quasi doloribus, harum totam deserunt perferendis, sequi fuga libero laboriosam?</p>
-                 <p class="read-more">Read More&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></p>
-                 <hr>
+    </div>
+  
+    <h1 class="fw-bold post text-center mt-5">Latest Post</h1>
+    <section class="cards-section container" id="news">
+      content of this section is looped thruogh in the js file
+    </section>
+       
+   <section class="blog-section container" id="blogs">
+    <div class="blogs-container"> 
+        <h1 class="text-center fw-bold">Recent Blogs</h1>
+          <div class="blogs">
+           <div data-aos="zoom-in">
+              <img src="images/blog.jpeg" alt="">
             </div>
-            <div class="blogs">
-               <div data-aos="zoom-in">
-                <img src="images/hhh.jpg" alt="">
-              </div>
-                 <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
-                <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;January 5th,2022</span>
-                <span><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;1 comment</span></p>
-                <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. Ipsum laborum, magnam molestiae quasi doloribus, harum totam deserunt perferendis, sequi fuga libero laboriosam?</p>
-                <p class="read-more">Read More&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></p>
-                <hr>
-
-           </div>
-           <div class="blogs">
-            <div data-aos="zoom-in">
-            <img src="images/blog1.png" alt="">
+              <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
+              <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;January 5th,2022</span>
+              <span><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;1 comment</span></p>
+              <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. Ipsum laborum, magnam molestiae quasi doloribus, harum totam deserunt perferendis, sequi fuga libero laboriosam?</p>
+              <p class="read-more">Read More&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></p>
+              <hr>
           </div>
-             <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
+
+          <div class="blogs">
+              <div data-aos="zoom-in">
+              <img src="images/hhh.jpg" alt="">
+            </div>
+                <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
+              <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;January 5th,2022</span>
+              <span><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;1 comment</span></p>
+              <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. Ipsum laborum, magnam molestiae quasi doloribus, harum totam deserunt perferendis, sequi fuga libero laboriosam?</p>
+              <p class="read-more">Read More&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></p>
+              <hr>
+          </div>
+
+          <div class="blogs">
+            <div data-aos="zoom-in">
+             <img src="images/blog1.png" alt="">
+            </div>
+            <p class="blog-date"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span>admin</span>
             <span><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;January 5th,2022</span>
             <span><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;1 comment</span></p>
             <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sit.</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. Ipsum laborum, magnam molestiae quasi doloribus, harum totam deserunt perferendis, sequi fuga libero laboriosam?</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima quos, quisquam adipisci laudantium id consequuntur. </p>
             <p class="read-more">Read More&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></p>
-            <hr>
-        </div>
+          <hr>
        </div>
-            
-            <aside>
-            <div data-aos="fade-left">
-            <h3 class="fw-bold text-center mt-4">Categories</h3>
-             <p class="category">Lifestyle <span>(02)</span></p>
-             <p class="category">Technology <span>(10)</span></p>
-             <p class="category">Fashion <span>(07)</span></p>
-             <p class="category">Business <span>(03)</span></p>
-             <p class="category">Personal brand <span>(04)</span></p>
-            </div>
+    </div>     
+   
+  <aside>
+    <div data-aos="fade-left" class="categories-section">
+       <h3 class="fw-bold text-center mt-4">Categories</h3>
+       <p class="category">Lifestyle <span>(02)</span></p>
+       <p class="category">Technology <span>(10)</span></p>
+       <p class="category">Fashion <span>(07)</span></p>
+       <p class="category">Business <span>(03)</span></p>
+       <p class="category">Personal brand <span>(04)</span></p>
+    </div>
 
-            <div class="Popular-post mt-5">
-                <h1 class="fw-bold">Popular Post</h1>
-                <article>
-                    <img src="images/program.jpg" data-aos="flip-up" alt="">
-                    
-                    <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
-                </article>
-                <article>
-                    <img src="images/man.jpg" data-aos="flip-up" alt="">
-                    <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
-                </article>
-                <article>
-                    <img src="images/wed.jpg" data-aos="flip-up" alt="">
-                    <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
-                </article>
-                <article>
-                    <img src="images/opp.png" data-aos="flip-up" alt="">
-                    <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
-                </article>
-                <article>
-                    <img src="images/blog3.png" data-aos="flip-up" alt="">
-                    <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
-                </article>
-            </div>
-            <div class="tags" data-aos="zoom-in">
-                <h2 class="fw-bold">Popular tags</h2>
-                <p class="tag" >software</p>
-                <p class="tag">Finance</p>
-                <p class="tag">cryptocurrency</p>
-                <p class="tag">technology</p>
-                <p class="tag">Health</p>
-                <p class="tag">Sports</p>
-                <p class="tag">software</p>
-                <p class="tag">software</p>
-            </div>
-            </aside>
+    <div class="Popular-post mt-5">
+      <h1 class="fw-bold">Popular Post</h1>
+      <div class="popular-post-content">
+      <article>
+        <img src="images/program.jpg" data-aos="flip-up" alt="">
+        <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
+      </article>
+      <article>
+        <img src="images/man.jpg" data-aos="flip-up" alt="">
+        <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
+      </article>
+      <article>
+        <img src="images/wed.jpg" data-aos="flip-up" alt="">
+        <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
+      </article>
+      <article>
+        <img src="images/opp.png" data-aos="flip-up" alt="">
+        <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
+      </article>
+      <article>
+        <img src="images/blog3.png" data-aos="flip-up" alt="">
+        <h5 class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisici</h5>
+      </article>
+    </div>
+    </div>
 
-        </section>
-       <!-- Footer -->
+    <div class="tags" data-aos="zoom-in">
+      <h2 class="fw-bold">Popular tags</h2>
+      <p class="tag" >software</p>
+      <p class="tag">Finance</p>
+      <p class="tag">cryptocurrency</p>
+      <p class="tag">technology</p>
+      <p class="tag">Health</p>
+      <p class="tag">Sports</p>
+      <p class="tag">software</p>
+      <p class="tag">software</p>
+  </aside>
+
+</section>
+</main>
+ 
 <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
     <div class="container p-4">
-  
-      <!-- Section: Form -->
       <section class="">
         <form action="">
-          <!--Grid row-->
           <div class="row d-flex justify-content-center">
-            <!--Grid column-->
             <div class="col-auto">
               <p class="pt-2">
                 <strong>Sign up for our newsletter</strong>
               </p>
             </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
             <div class="col-md-5 col-12" id="contact">
-              <!-- Email input -->
+              
               <div class="form-outline form-white mb-4">
                 <input type="email" id="form5Example21" class="form-control" />
                 <label class="form-label" for="form5Example21">Email address</label>
               </div>
             </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
+           
             <div class="col-auto">
-              <!-- Submit button -->
               <button type="submit" class="btn btn-outline-light mb-4">
                 Subscribe
               </button>
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </form>
       </section>
-      <!-- Section: Form -->
-  
-      <!-- Section: Text -->
       <section class="mb-4">
         <p data-aos="zoom-in">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
@@ -220,13 +182,8 @@
           eum harum corrupti dicta, aliquam sequi voluptate quas.
         </p>
       </section>
-      <!-- Section: Text -->
-  
-      <!-- Section: Links -->
       <section class="">
-        <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-left">
             <h5 class="fw-bold">Partnership</h5>
   
@@ -242,9 +199,6 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-left">
             <h5 class="fw-bold">About</h5>
   
@@ -258,9 +212,6 @@
               <li>
             </ul>
           </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-right">
             <h5 class="fw-bold">Support</h5>
   
@@ -273,9 +224,6 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="fade-right">
             <h5 class="fw-bold">Stay connected</h5>              
                 <div class="socials mb-0">
@@ -285,26 +233,17 @@
                   <i class="fa-brands fa-linkedin-in mx-1 social"></i>
               </div>       
           </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </section>
-      <!-- Section: Links -->
     </div>
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);" data-aos="zoom-in">
       © 2020 Copyright:
       <a class="text-white text-decoration-none" href="http://lardzi.tech/">Lardzi.tech</a>
     </div>
-  </footer>
-  <!-- Footer -->
-
-      </main>
+  </footer>   
+  
        <!--AOS js library-->
-       <script src="aos.js"></script>
-      <!--jquery-->
-      <script src="jquery.js"></script>
-      <!--Owl carousel-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -9,18 +9,19 @@
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: aliceblue;
+    width: 100%;
+    position: relative;
 }
 .toggle-button{
     height: 20px;
     width: 25px;
     position: absolute;
     top: 1rem;
-    display: none;
+    right: 20px;
     flex-direction: column;
     justify-content: space-between;
-    right: 1rem;
 }
 .toggle-button .bar{
     width: 100%;
@@ -43,10 +44,10 @@ nav{
 }
 .links ul li a::before{
  content: "";
- height: 3px;
+ height: 2px;
  transition: all 300ms ease-in-out;
  position: absolute;
- background-color: rgb(37, 35, 35);
+ background-color: rgb(43, 41, 41);
 }
 .spin::before{
     width: 0%;
@@ -70,31 +71,29 @@ nav h1 a:hover{
   color: black;
 
 }
-.socials{
-    padding-right: 1rem;
-}
-.socials i{
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-.socials i:hover{
-    color: #50c9d9;
-}
+
 /*Home page*/
 .home{
-background-image: url("images/ab.avif");
+background-image: url("images/bgImage.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 100vh;
-display: flex;
+height: 90vh;
+}
+.header-overlay{
+ background-color: rgba(0, 0, 0, 0.5);
+ width: 100%;
+ height: 90vh;
+ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-bottom: 4rem;
-
+color: #fff;
 }
+.header-overlay h1{
+    font-size: 3rem;
+}
+
 .cover{
     border: 1px solid black;
     padding: 5px;
@@ -103,66 +102,66 @@ margin-bottom: 4rem;
     position: relative;
     background-color: rgb(2, 9, 2);
     color: white;
-    transition: all 400ms ease-in-out;
-    
+    transition: all 400ms ease-in-out;  
 }
 
 .cover:hover{
     background-color: transparent;
     color: black;
 }
-/*.ccc{
-    height: 100%;
-    width: 0;
-    background-color: green;
-    border-radius: 25px;
-    transition: .5s;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 0;
-}*/
+
 button:hover span{
     width: 100%;
 }
 
-.home h1, nav h1{
+ nav h1{
     font-family: 'Lobster', cursive;
-    font-family: 'Playfair Display', serif;
-    
+    font-family: 'Playfair Display', serif; 
 }
 
 /*Cards section=======*/
 .cards-section{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    max-width: 1400px;
+    overflow-x: scroll;
 }
+
 .cards-section article{
 text-align: center;
-width: 22.5rem;
-box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
-
+width: 22rem;
+box-shadow: 2px 2px 10px rgb(12, 8, 8, .2);
+}
+::-webkit-scrollbar{
+    display: none;
 }
 .cards-section img{
-    height: 15rem;
-    width: 22.5rem;
+    height: 12rem;
+    width: 20rem;
 }
 .cards-section article button{
     background-color:#50c9d9;
     color: black;
     border: none;
-    border-radius: 1rem;
-    padding: .2rem .8rem;
+    border-radius: 1.5rem;
+    padding: 10px 20px;
 }
 /*Blog section*/
 .blog-section{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    margin-bottom: 4rem;
-    width: 90%;
-    margin: 5% 5% 2% 5%;
+  display: flex;
+  margin: 4rem 0 7rem;
+  width: 100%;
 }
-
+.blogs-container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;  
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .blogs img{
     width: 46em;
     transition: all 300ms ease-in-out;
@@ -178,21 +177,17 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
 .blog-date{
     background-color: #50c9d9;
     padding: .5rem 1rem;
-    width: 24rem;
+    width: 70%;
     border-radius: 2rem; 
     position: relative;
-    left: 4rem;
+    left: 1rem;
     bottom: 2.5rem;
 }
 
 .blog-date span{
     margin-left: .3rem;
 }
-.blogs h3, .blog-section h1, 
-.post, aside h3, .Popular-post h5,
-.tags h2{
-    font-family: 'Playfair Display', serif;
-}
+
 .read-more{
     background-color:#50c9d9;
     padding: .5rem;
@@ -203,19 +198,17 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
 /*category*/
   .category{
     background-color: #50c9d9;
-    padding: .5rem 1rem;
-    width: 15rem;
+    width: 13rem;
     border-radius: 2rem;
     position: relative;
+    padding: .5rem 1.8rem;
   }
-
+ 
   .category span{
     position: absolute;
-    left: 11rem;
+    left: 10rem;
   }
-  aside{
-    margin-left: 2rem;
-  } 
+  
   .Popular-post article img{
     width: 22rem;
     height: 10rem;
@@ -225,21 +218,39 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
   }
   .tags{
     margin-top: 4rem;
+    
   }
   .tag{
     background-color: #50c9d9;
     padding:.5rem 1.2rem;
-    min-width: 5rem;
     border-radius: 2rem;  
     display: inline-block;
   }
   /*Big tablets */
-  @media only screen and (max-width: 1024px){
-    nav{
-        width: 100%;
-        overflow: hidden; 
-        justify-content: left;   
+  @media screen and (max-width: 1230px){
+    .blog-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+        width: 100vw;
+        margin: 0;
+        overflow: hidden;
     }
+    aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .popular-post-content{
+       display: flex;
+       gap: 1rem;
+        max-width: 400px;
+        overflow-x: scroll;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 1024px){
     .sign{
         margin-left: 2rem;
     }
@@ -258,46 +269,26 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
     }
     aside h5{
         font-size: 1.1rem;
-    }
-    aside{
-        margin: 0 2rem;
-    }
-    
+    }  
 }
 
-@media only screen and (max-width: 980px){
-   
+@media screen and (max-width: 980px){
     .blog-section{
         overflow: hidden;
     }
     .sign{
         margin-left: 2rem;
     }
-    
-    .Popular-post article img{
-        width: 13rem;
-        height: 8rem;
-      } 
+
       aside .Popular-post article{
         margin-left: 2rem;
       }  
-      .Popular-post h1, aside h3, .tags h2, .blogs h3{
-        font-size: 1.2rem;
-    }
     .blogs{
         margin-left: 0;
     }
    
       .blogs img{
         width: 24rem;
-    }
-    .blog-date{
-        background-color: #50c9d9;
-        padding: .5rem 1rem;
-        width: 15rem;
-        border-radius: 2rem; 
-        border-radius: none;
-        
     }
     .blog-date span{
         font-size: .7rem;
@@ -317,12 +308,7 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
             width: 20rem;
             gap: 1rem;
         }
-        .blog-section{
-            display: grid;
-            grid-template-columns: 60% 40%;
-            width: 94%;
-            margin: 3%;
-        }
+       
         .category{
             padding: .5rem 1rem;
             width: 12rem;
@@ -343,6 +329,13 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
       font-size: 0.8rem;
         }
 }
+@media screen and (max-width: 770px){
+    aside{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+}
+
 /*mobile*/
 @media only screen and (max-width: 600px){
     body{
@@ -351,12 +344,11 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
     }
     .toggle-button{
         display: flex;
-
     }
     nav{
-        width: 100vw;
         flex-direction: column;
         align-items: flex-start;
+        margin: 0;
     }
     .links ul{
         flex-direction: column;
@@ -382,14 +374,7 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
     .links.active, .sign button.active{
         display: flex;  
     }
-    .blog-section{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-bottom: 4rem;
-        width: 100vw;
-        margin: 0;
-        overflow: hidden;
-    }
+
     .blogs{
         width: 100vw;
     }
@@ -400,13 +385,7 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
     .blog h3, .blog p{
         padding:0 5%;
     }
-    .blog-date{
-        background-color: #50c9d9;
-        
-        width: 22rem;
-        border-radius: .5rem; 
-        font-size: 0.8rem;
-    }
+
     .blog-date span{
         font-size: 1rem;
     }
@@ -423,27 +402,19 @@ box-shadow: 2px 2px 10px rgb(12, 8, 8, .3);
             height: 13rem;
             width: 22rem;
             gap: 1rem;
-        }
-        .category{
-            background-color: #50c9d9;
-            padding: .5rem 1rem;
-            width: 20rem;
-            border-radius: 2rem;
-            position: relative;
-          } 
-          .category span{
-            position: absolute;
-            left: 15rem;
-          }
+        } 
           .Popular-post article img{
             width: 22rem;
             height: 12rem;
           }  
-          .home{
-            width: 100vw;
+          .category{
+            width: 80%;
+          }
+          .category span{
+            left: 70%;
           }
           .Popular-post{
-            width: 100%;
+            width: 80%;
           }
           
 }
